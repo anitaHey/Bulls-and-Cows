@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="566.0" style="-fx-background-color: #f1eeee;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="27.0" layoutY="31.0" prefHeight="30.0" prefWidth="89.0" text="Name :" textFill="#414946">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField id="name" layoutX="104.0" layoutY="28.0" prefHeight="6.0" prefWidth="144.0" promptText="請輸入名子">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="27.0" layoutY="83.0" prefHeight="27.0" prefWidth="144.0" text="Please select :" textFill="#414946">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton id="radio_number" layoutX="171.0" layoutY="86.0" mnemonicParsing="false" text="猜數字" textFill="#414946">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton id="radio_color" layoutX="272.0" layoutY="85.0" mnemonicParsing="false" text="顏色" textFill="#414946">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="382.0" layoutY="34.0" text="Timer" textFill="#414946">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField id="timer" layoutX="444.0" layoutY="30.0" prefHeight="36.0" prefWidth="68.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="514.0" layoutY="33.0" text="秒" textFill="#414946">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TabPane id="tab" layoutX="1.0" layoutY="129.0" prefHeight="319.0" prefWidth="566.0" style="-fx-background-color: #e0dad5; -fx-border-color: #d1caca;" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="50.0" tabMaxWidth="250.0" tabMinWidth="250.0">
+        <tabs>
+          <Tab style="-fx-background-color: #e0dad5; -fx-font-size: 18px; -fx-border-color: #c4c6ba;" text="數字">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="283.0" prefWidth="566.0">
+                     <children>
+                        <Label layoutX="28.0" layoutY="16.0" text="猜4個數字 :" textFill="#3f3830">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField id="text_number" alignment="CENTER" layoutX="143.0" layoutY="12.0" prefHeight="36.0" prefWidth="144.0" promptText="數字不可重複">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="29.0" layoutY="61.0" text="提示 :" textFill="#3f3830">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="106.0" text="過去紀錄 :" textFill="#3f3830">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Button id="enter_number" layoutX="336.0" layoutY="11.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="確定" textFill="#3f3830">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button id="again_number" layoutX="446.0" layoutY="11.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="重玩" textFill="#3f3830">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label id="answer_number" alignment="CENTER" layoutX="86.0" layoutY="60.0" prefHeight="30.0" prefWidth="122.0" textFill="#492711">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <ScrollPane layoutX="43.0" layoutY="133.0" prefHeight="141.0" prefWidth="478.0" style="-fx-border-color: #b0b1a1; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <content>
+                              <VBox id="record_number" prefHeight="136.0" prefWidth="455.0" style="-fx-background-radius: 10px;" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-background-color: #e0dad5; -fx-font-size: 18px; -fx-border-color: #c4c6ba;" text="顏色">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="549.0">
+                     <children>
+                        <ScrollPane layoutX="43.0" layoutY="133.0" prefHeight="141.0" prefWidth="478.0" style="-fx-border-color: #b0b1a1; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <content>
+                              <VBox id="record_color" prefHeight="136.0" prefWidth="473.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" />
+                           </content>
+                        </ScrollPane>
+                        <Label layoutX="27.0" layoutY="106.0" text="過去紀錄 :" textFill="#3f3830">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label id="answer_color" alignment="CENTER" layoutX="85.0" layoutY="60.0" prefHeight="30.0" prefWidth="121.0" textFill="#492711">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="61.0" text="提示 :" textFill="#3f3830">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Button id="again_color" layoutX="436.0" layoutY="57.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="重玩" textFill="#3f3830">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button id="enter_color" layoutX="326.0" layoutY="57.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="確定" textFill="#3f3830">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="27.0" layoutY="16.0" text="猜4個顏色 :" textFill="#3f3830">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox id="choice_color1" layoutX="138.0" layoutY="15.0" prefHeight="30.0" prefWidth="89.0" style="-fx-font-size:18px;" />
+                        <ChoiceBox id="choice_color2" layoutX="238.0" layoutY="15.0" prefHeight="30.0" prefWidth="89.0" style="-fx-font-size:18px;" />
+                        <ChoiceBox id="choice_color3" layoutX="341.0" layoutY="15.0" prefHeight="30.0" prefWidth="89.0" style="-fx-font-size:18px;" />
+                        <ChoiceBox id="choice_color4" layoutX="443.0" layoutY="15.0" prefHeight="30.0" prefWidth="89.0" style="-fx-font-size:18px;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button id="save_button" layoutX="141.0" layoutY="464.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="97.0" text="存檔" textFill="#414946">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button id="load_button" layoutX="334.0" layoutY="464.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="97.0" text="讀檔" textFill="#414946">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="45.0" layoutY="511.0" prefHeight="141.0" prefWidth="478.0" style="-fx-border-color: #b0b1a1; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <content>
+            <VBox id="record_all" prefHeight="136.0" prefWidth="455.0" style="-fx-background-radius: 10px;" />
+         </content>
+      </ScrollPane>
+      <Button id="start_button" layoutX="466.0" layoutY="78.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="68.0" text="開始" textFill="#414946">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label id="timer_label" alignment="CENTER" layoutX="444.0" layoutY="32.0" prefHeight="30.0" prefWidth="68.0">
+      	<font>
+             <Font size="18.0" />
+        </font>
+      </Label>
+   </children>
+</AnchorPane>

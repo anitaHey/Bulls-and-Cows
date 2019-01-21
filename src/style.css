@@ -1,0 +1,21 @@
+Button {
+	-fx-background-color: #d1caca;
+	-fx-border-color: #909690;
+	-fx-background-radius: 10.0px;
+	-fx-border-radius: 10.0px;
+}
+
+Button:pressed:hover {
+	-fx-background-color: #6d6969;
+}
+
+Button:hover {
+	-fx-background-color: #b2abab;
+}
+
+Tab Button{
+	-fx-border-color: #a1a399;
+	-fx-border-radius: 10.0px;
+	-fx-background-radius: 10.0px; 
+	-fx-background-color: #d1cac4;
+}
